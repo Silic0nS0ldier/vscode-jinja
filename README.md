@@ -2,6 +2,8 @@
 
 This extension is a fork of [wholroyd/vscode-jinja](https://github.com/wholroyd/vscode-jinja). It provides language colorization support for the Twig template language to VS Code.
 
+As with upstream, the includes are busted meaning its either html/yaml syntax highlighting or twig. Current plan for overcoming this is a crazy build script that grabs the default language extennsions (like those in the vscode repo's extensions folder), and injecting in twig support. With a little luck, things will be working just like the upstream once did.
+
 ![IDE](./example.png)
 
 ## Using
