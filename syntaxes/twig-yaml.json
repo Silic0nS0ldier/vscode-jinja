@@ -1,0 +1,19 @@
+{
+    "name": "twig-yaml",
+    "scopeName": "text.yaml.twig",
+    "comment": "Twig Template Engine in YAML",
+    "fileTypes": [
+        "twig",
+        "yml",
+        "yaml"
+    ],
+    "firstLineMatch": "^{% extends [\"'][^\"']+[\"'] %}",// I mean... Really?
+    "patterns": [
+        {
+            "include": "source.twig"
+        },
+        {
+            "include": "source.yaml"
+        }
+    ]
+}

@@ -1,20 +1,27 @@
 {
-	"name": "jinja",
-	"version": "0.0.8",
-	"publisher": "wholroyd",
+	"name": "vscode-twig",
+	"version": "0.1.0",
+	"publisher": "SiliconSoldier",
 	"author": {
-		"name": "William Holroyd"
+		"name": "Jordan Mele",
+		"email": "SiliconSoldier@outlook.com.au"
 	},
+	"contributors": [
+		{
+			"name": "William Holroyd",
+			"role": "Creator of https://github.com/wholroyd/vscode-jinja, of which this extension is based."
+		}
+	],
 	"license": "MIT",
 	"icon": "icon.png",
-	"description": "Jinja template language support for Visual Studio Code",
-	"displayName": "Jinja",
+	"description": "Twig template language support for Visual Studio Code",
+	"displayName": "Twig Templating",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/wholroyd/vscode-jinja.git"
+		"url": "https://github.com/Silic0nS0ldier/vscode-twig.git"
 	},
 	"bugs": {
-		"url": "https://github.com/wholroyd/vscode-jinja/issues"
+		"url": "https://github.com/Silic0nS0ldier/vscode-twig/issues"
 	},
 	"categories": [
 		"Languages",
@@ -27,29 +34,29 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "jinja",
+				"id": "twig",
 				"aliases": [
-					"Jinja"
+					"Twig"
 				],
-                "extensions": [".j2"],
-				"configuration": "./jinja.configuration.json"
+                "extensions": [".twig"],
+				"configuration": "./twig.configuration.json"
 			}
 		],
 		"grammars": [
 			{
-				"language": "jinja",
-				"scopeName": "source.jinja",
-				"path": "./syntaxes/jinja.json"
+				"language": "twig",
+				"scopeName": "source.twig",
+				"path": "./syntaxes/twig.json"
 			},
 			{
-				"language": "html",
-				"scopeName": "text.html.jinja",
-				"path": "./syntaxes/jinja-html.json"
+				"language": "html.twig",
+				"scopeName": "text.html.twig",
+				"path": "./syntaxes/twig-html.json"
 			},
 			{
-				"language": "yaml",
-				"scopeName": "text.yaml.jinja",
-				"path": "./syntaxes/jinja-yaml.json"
+				"language": "yaml.twig",
+				"scopeName": "text.yaml.twig",
+				"path": "./syntaxes/twig-yaml.json"
 			}
 		]
 	}
